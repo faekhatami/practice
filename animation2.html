@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Animations Example</title>
+    <style>
+        .rectangle {
+            width: 200px;
+            height: 100px;
+            background-color: skyblue;
+            position: relative;
+            animation: move 4s linear infinite, changeColor 2s ease-in-out infinite;
+        }
+
+        @keyframes move {
+            0% {
+                left: 0;
+            }
+
+            50% {
+                left: 300px;
+            }
+
+            100% {
+                left: 0;
+            }
+        }
+
+        @keyframes changeColor {
+            0% {
+                background-color: skyblue;
+            }
+
+            50% {
+                background-color: violet;
+            }
+
+            100% {
+                background-color: skyblue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rectangle"></div>
+</body>
+
+</html>

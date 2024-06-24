@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        header, footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        
+        main {
+            display: flex;
+            flex: 1;
+            flex-wrap: wrap;
+            padding: 1em;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .box {
+            background: #eee;
+            border: 1px solid #ccc;
+            padding: 2em;
+            margin: 1em;
+            flex: 1 1 300px;
+            text-align: center;
+        }
+        
+        @media (max-width: 600px) {
+            main {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Flexbox Layout</h1>
+    </header>
+    <main>
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+</body>
+</html>
