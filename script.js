@@ -33,3 +33,14 @@ function getGrade(score) {
 console.log("Grade for 95:", getGrade(95));
 console.log("Grade for 82:", getGrade(82));
 console.log("Grade for 68:", getGrade(68));
+
+let numbers = [1, 2, 3, 4, 5];
+for (let i = 0; i < numbers.length; i++) {
+  console.log("Number at index", i, ":", numbers[i]);
+}
+
+let count = 0;
+while (count < 3) {
+  console.log("Count:", count);
+  count++;
+}
