@@ -44,3 +44,17 @@ while (count < 3) {
   console.log("Count:", count);
   count++;
 }
+
+let numbers2 = [1, 2, 3, 4, 5];
+
+let fruits = ["apple", "banana", "cherry"];
+
+let people = [
+  { name: "Alice", age: 30 },
+  { name: "Bob", age: 25 },
+  { name: "Charlie", age: 35 },
+];
+
+console.log("Numbers:", numbers2);
+console.log("Fruits:", fruits);
+console.log("People", people);
