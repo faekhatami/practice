@@ -1,16 +1,17 @@
+// Selecting elements
 let titleElement = document.getElementById("title");
 let paragraphElement = document.querySelector(".description");
 let buttonElement = document.getElementById("changeTextButton");
+
+// Intentional error: Misspelled function name
+titleElement.inerHTML = "Hello, JavaScript!";
 
 console.log("Title Element:", titleElement);
 console.log("Paragraph Element:", paragraphElement);
 console.log("Button Element:", buttonElement);
 
-titleElement.innerHTML = "Hello, JavaScript!";
-paragraphElement.textContent = "This paragraph has been modified.";
-
-titleElement.setAttribute("style", "color: blue;");
-
-buttonElement.addEventListener("click", function () {
+// Responding to user events with intentional error
+buttonElement.addEventListener("clic", function () {
+  // Intentional typo in 'click'
   paragraphElement.textContent = "Button was clicked!";
 });
