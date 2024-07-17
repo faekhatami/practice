@@ -58,3 +58,19 @@ let people = [
 console.log("Numbers:", numbers2);
 console.log("Fruits:", fruits);
 console.log("People", people);
+
+console.log("First number:", numbers2[0]);
+console.log("Second fruit:", fruits[1]);
+console.log("First person's name:", people[0].name);
+
+numbers2.push(6);
+fruits.unshift("orange");
+
+numbers2.pop();
+fruits.shift();
+
+numbers2[2] = 10;
+fruits[1] = "blueberry";
+
+console.log("Modified Numbers:", numbers2);
+console.log("Modified Fruits:", fruits);
