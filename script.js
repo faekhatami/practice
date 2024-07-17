@@ -74,3 +74,21 @@ fruits[1] = "blueberry";
 
 console.log("Modified Numbers:", numbers2);
 console.log("Modified Fruits:", fruits);
+
+let car = {
+  make: "Toyota",
+  model: "Corolla",
+  year: 2020,
+  start: function () {
+    console.log("The car has started.");
+  },
+  drive: function () {
+    console.log("The car is driving.");
+  },
+};
+
+console.log("Car make:", car.make);
+console.log("Car model:", car.model);
+
+car.start();
+car.drive();
