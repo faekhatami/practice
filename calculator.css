@@ -1,11 +1,27 @@
 .calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto repeat(4, 1fr);
+    gap: 10px;
     max-width: 200px;
     margin: auto;
-    text-align: center;
 }
 
-input,
+input {
+    grid-column: span 4;
+    text-align: right;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
 button {
-    width: 100%;
-    margin: 5px 0;
+    padding: 20px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d0d0d0;
 }
