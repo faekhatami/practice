@@ -1,0 +1,9 @@
+.quiz-container {
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+.question {
+    margin: 20px 0;
+}
